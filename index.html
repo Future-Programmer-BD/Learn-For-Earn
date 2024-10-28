@@ -4,24 +4,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="nahid hasan,new website">
+    <meta name="description" content="my name is nahid hasan Utsob">
+   
     <title>My Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Roboto Mono", monospace;
+        }
+    </style>
+
+
 </head>
 
-<body>
+<body  id="body">
+    
     <!--navigation section-->
-    <section>
-        <nav>
-            <ul type="none">
-                <li><a href="#about_me">About me</a></li>
-                <li><a target="_blank" href="nothing.html">Nothing</a></li>
-                <li><a href="#about_collage">About collage</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </section>
-
+    <header> <nav>
+        <ul type="none">
+            <li><a href="#about_me">About me</a></li>
+            <li><a target="_blank" href="nothing.html">Nothing</a></li>
+            <li><a href="#about_collage">About collage</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+    </nav></header>
+    <main id="main_body">
     <!--About me section-->
 
     <section id="about_me">
@@ -67,13 +83,18 @@
             </tr>
 
             <tr>
-                <td>English</td>
-                <td>Native</td>
+                <td >English</td>
+                <td rowspan="2">Native</td>
             </tr>
             <tr>
-                <td>Bangla</td>
+                <td >Bangla</td>
+            </tr>
+
+            <tr>
+                <td >Bangla</td>
                 <td>B2</td>
             </tr>
+            
         </table>
 
         <!--list section-->
@@ -117,41 +138,57 @@
         <h1 style="color: red;">Contacts</h1>
 
 
-        <form action="">
+        <form action="https://formspree.io/f/mrbgeywk"
+        method="POST">
 
             <div>
-                <label for="name">Name</label>
-                <input required type="text" id="name">
+                <label  for="name" >Name</label>
+                <input name="name" required type="text" id="name">
             </div>
 
             <div>
                 <label for="Email">Email</label>
-                <input required type="email" id="Email">
+                <input name="email" required type="email" id="Email">
             </div>
 
             <div>
                 <label for="phone">Phone</label>
-                <input required type="tel" id="phone">
+                <input name="phone" required type="tel" id="phone">
             </div>
             <div>
                 <label for="password">Password</label>
-                <input required type="password" id="Password">
+                <input name="password" required type="password" id="password">
             </div>
 
 
             <div>
-                <label for="confirmPassword">Confirm Password</label>
-                <input required type="password" id="confirmPassword">
+                <label for="age">Your age</label>
+                <input name="age"  required type="date" id="age">
             </div>
+
+            <div>
+                <label for="website">Website</label>
+                <input name="website"   type="url" id="website">
+            </div>
+
             <div>
                 <input required type="submit" value="Submit">
             </div>
+
         </form>
         <br>
-
+</main>
         <footer>
-            <a href="tel:01518989870">Call Me</a>
+            <ul>
+                <li> <i class="fa-brands fa-facebook"></i>  <a href="www.facebook.com">Visit facebook</a></li>
+
+                <li> <i class="fa-brands fa-youtube"></i>  <a href="www.youtube.com">Visit facebook</a></li>
+                <li><a href="tel:01518989870">Call Me</a></li>
+          <li>
             <a href="mailto:mdnahidhassan555@gmail.com">Mail Me</a>
+        </li>
+        </ul>
+           
         </footer>
 
     </section>
