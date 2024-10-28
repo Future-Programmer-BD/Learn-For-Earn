@@ -138,7 +138,10 @@
     <section id="Contacts">
         <h1 style="color: red;">Contacts</h1>
 
-
+        <fieldset>
+            <legend>Fill The Form</legend>
+            
+        
         <form action="https://formspree.io/f/mrbgeywk"
         method="POST">
 
@@ -172,11 +175,30 @@
                 <input name="website"   type="url" id="website">
             </div>
 
+            
+    
+        <div id="gender-selector">
+            <label >Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="Male" required> Male</label>
+
+            <label>
+                <input type="radio" name="gender" value="Female"> Female
+            </label>
+
+        
+        </div>
+       
+
+
             <div>
                 <input required type="submit" value="Submit">
             </div>
 
+
+            
         </form>
+    </fieldset>
         <br>
 </main>
         <footer>
