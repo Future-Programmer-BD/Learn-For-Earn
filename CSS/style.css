@@ -1,0 +1,111 @@
+:root{
+    --primary-color: #139513 ;
+    --second-color: #ffffff ;
+    --shadow-color: #adb0ad ;
+    --card-color: #ffffff ;
+    
+}
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+body{
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1{
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem 0px;
+    
+    
+}
+
+
+header > nav > ul,a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    color: var(--second-color);   
+
+}
+
+ .card{
+   
+    background-color: var(--card-color);
+    padding: 10px;
+    margin: 20px;
+
+    box-shadow: 0 0.4rem 0.2rem  var(--shadow-color);
+   
+    border-radius: 10px;
+ }
+
+ button{
+    background-color: 
+    var(--primary-color);
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 7px;
+    box-sizing: border-box;
+   
+    cursor: pointer;
+    
+
+ }
+ button:hover{
+
+    background-color: red;
+   
+ }
+
+ li{
+    list-style: none;
+ }
+ footer{
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+  
+ }
+
+ input,button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    border-width: 1px;
+
+ }
+
+ #legend-text{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+ }
+
+ table,th,td{
+    background-color: var(--primary-color);
+    width: 100%;
+    color: var(--card-color);
+    border: 1px solid rgb(94, 18, 169);
+    padding: 0.5rem;
+
+
+    border-collapse: collapse;
+    margin: 5px 0;
+ }

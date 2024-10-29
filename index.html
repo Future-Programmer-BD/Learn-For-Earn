@@ -16,45 +16,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            font-family: "Roboto Mono", monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+
 
 
 </head>
 
-<body  id="body">
+ 
+
+<body>
     
-    <!--navigation section-->
-    <header> <nav>
-        <ul type="none">
-            <li><a href="#about_me">About me</a></li>
-            <li><a target="_blank" href="nothing.html">Nothing</a></li>
-            <li><a href="#about_collage">About collage</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Contacts">Contacts</a></li>
-        </ul>
-    </nav></header>
+   <!--navigation section-->
+   <header> 
+    <nav id="nav_ul_list">
+    <ul >
+        <li><a href="#about_me">About me</a></li>
+        <li><a target="_blank" href="nothing.html">Nothing</a></li>
+        <li><a href="#about_collage">About collage</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+    </ul>
+</nav></header>
+
     <main id="main_body">
     <!--About me section-->
 
-    <section id="about_me">
-        <h1 style="color: red">Nahid Hasan Utsob</h1>
+    <section class="card">
+        <h1>Nahid Hasan Utsob</h1>
 
-        <a title="click to view" href="www.google.com"><img height="250px" width="200px" src="images.jpg"
+        <a title="click to view" href="www.google.com"><img height="250px" width="200px" src="image.png"
                 alt="tree image"></a>
 
         <p>আমি কুড়িগ্রাম পলিটেকনিক এ পড়ি।</p>
     </section>
-    <hr />
+   
 
     <!--About section-->
 
-    <section id="about_collage">
-        <h1 style="color: red">About Our Institute</h1>
+    <section class="card">
+        <h1>About Our Institute</h1>
         <p>
             <strong>কুড়িগ্রাম পলিটেকনিক ইন্সটিটিউট</strong> বাংলাদেশের একটি অন্যতম
             প্রাচীন ও বৃহত্তম কারিগরী শিক্ষা প্রতিষ্ঠান। <b>২০০৬</b> সালে কারিগরি
@@ -63,21 +64,21 @@
             বেশি জায়গা নিয়ে অবস্থিত কুড়িগ্রাম পলিটেকনিক ইন্সটিটিউটের ক্যাম্পাসটি।
         </p>
     </section>
-    <hr />
+
 
     <!--Experience section-->
-    <section id="Experience">
-        <h1 style="color: red">Experience</h1>
+    <section class="card">
+        <h1 >Experience</h1>
         <p><strong>Experience 1:</strong> Nothing</p>
         <p><strong>Experience 1:</strong> Nothing</p>
         <p><strong>Experience 1:</strong> Nothing</p>
     </section>
-    <hr />
+  
     <!--Skills section-->
-    <section id="Skills">
-        <h1 style="color: red">Skills</h1>
+    <section class="card">
+        <h1 >Skills</h1>
 
-        <table border="1px">
+        <table>
             <tr>
                 <th>Language</th>
                 <th>Proficiency</th>
@@ -98,48 +99,21 @@
             
         </table>
 
-        <!--list section-->
-        <ol>
-            <li>list 1</li>
-            <li>list 2</li>
-            <li>list 3</li>
-            <li>list 4</li>
-            <ul>
-                <li>sub list 1</li>
-                <li>sub list 2</li>
-                <li>sub list 3</li>
-            </ul>
-            </ul>
-            <li>list 5</li>
-            <li>list 6</li>
-            <li>list 7</li>
-        </ol>
+      
     </section>
-    <hr>
-    <!--Projects section-->
 
-    <section id="Projects">
-        <h1 style="color: red;">Projects</h1>
-
-
-        <ol type="1">
-            <a href="www.google.com">
-                <li>noting 1</li>
-            </a>
-            <li>noting 2</li>
-            <li>noting 3</li>
-        </ol>
+  
 
     </section>
-    <hr>
+   
 
     <!--Contacts section-->
 
-    <section id="Contacts">
-        <h1 style="color: red;">Contacts</h1>
+    <section class="card">
+        <h1>Contacts</h1>
 
         <fieldset>
-            <legend>Fill The Form</legend>
+            <legend id="legend-text">Fill The Form</legend>
             
         
         <form action="https://formspree.io/f/mrbgeywk"
@@ -172,12 +146,14 @@
 
             <div>
                 <label for="website">Website</label>
-                <input name="website"   type="url" id="website">
+                <input disabled  
+            
+                name="website"   type="url" id="website">
             </div>
 
             
     
-        <div id="gender-selector">
+        <div>
             <label >Gender:</label>
             <label>
                 <input type="radio" name="gender" value="Male" required> Male</label>
@@ -191,15 +167,16 @@
        
 
 
-            <div>
-                <input required type="submit" value="Submit">
-            </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+           
+           
 
 
             
         </form>
     </fieldset>
-        <br>
+     
 </main>
         <footer>
             <ul>
