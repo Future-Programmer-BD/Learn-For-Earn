@@ -25,8 +25,11 @@ nav {
     background-color: var(--primary-color);
     text-align: center;
     padding: 1.5rem 0px;
-    
-    
+    position: fixed;
+    width: 100%;
+   
+   
+
 }
 
 
@@ -35,7 +38,21 @@ header > nav > ul,a {
     font-weight: bold;
     padding: 0%;
     margin: 0%;
-    color: var(--second-color);   
+    color: var(--second-color); 
+    display: flex;
+    justify-content: center;
+      
+
+}
+
+
+header > nav > ul > li {
+  margin-right: 10px;
+
+}
+
+header > nav > ul > li:hover {
+background-color: red;
 
 }
 
@@ -69,6 +86,22 @@ header > nav > ul,a {
    
  }
 
+
+ .contant{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+
+
+
  li{
     list-style: none;
  }
@@ -78,9 +111,12 @@ header > nav > ul,a {
     text-align: center;
     padding: 10px;
     bottom: 0;
-    width: 100%;
     text-decoration: none;
   
+ }
+
+ footer > ul > li > a:hover{
+    background-color: red;
  }
 
  input,button{
@@ -91,11 +127,13 @@ header > nav > ul,a {
 
  }
 
+
  #legend-text{
     color: red;
     font-weight: bold;
     font-size: large;
     text-align: center;
+    border-collapse: collapse;
  }
 
  table,th,td{
@@ -104,8 +142,12 @@ header > nav > ul,a {
     color: var(--card-color);
     border: 1px solid rgb(94, 18, 169);
     padding: 0.5rem;
-
-
     border-collapse: collapse;
     margin: 5px 0;
+ }
+
+
+ #Contacts{
+   width: 90%;
+   align-items: center;
  }
